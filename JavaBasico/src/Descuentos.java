@@ -6,14 +6,14 @@ public class Descuentos {
 	 Scanner sc = new Scanner(System.in);
 	
 	float numero = sc.nextFloat();
-	 if(numero<=1000){
+	 if(numero<= 999){
 	System.out.println("El descuento no es válido.");
 	}
-	else if(numero<= 1001 && numero>= 4999){
+	else if(numero >= 1000 && numero < 4999){
 	System.out.println( "Tu total con descuento del 10% es:" + (numero * 0.9));
-	} else if(numero<=5000 && numero>=9999){
+	} else if(numero >= 5000 && numero < 1000){
 	System.out.println( "Tu total con descuento del 20% es:" + (numero * 0.8 ));
-	} else if(numero>10000){
+	} else if(numero>=10000){
 	System.out.println( "Tu total con descuento del 30% es:" + (numero * 0.7));}
 	
 	else {System.out.println("Ha ocurrido un error." );
